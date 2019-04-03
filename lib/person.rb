@@ -31,19 +31,11 @@ attr_accessor :bank_account, :happiness, :hygiene
   end
 
   def happy?
-    if @happiness > 7
-      return true
-    else
-      false
-    end
+    @happiness > 7
   end
 
   def clean?
-    if @hygiene > 7
-      return true
-    else
-      false
-    end
+    @hygiene > 7
   end
 
   def get_paid(salary)
