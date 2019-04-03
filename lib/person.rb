@@ -29,6 +29,7 @@ attr_accessor :bank_account, :hygiene, :happiness
     return "all about the benjamins"
   end
 
+
   def hygiene=(hygiene)
     if hygiene < 0
       @hygiene = 0
@@ -64,17 +65,20 @@ attr_accessor :bank_account, :hygiene, :happiness
     return "♪ Rub-a-dub just relaxing in the tub ♫"
   end
 
+
   def work_out
     self.hygiene -= 3
     self.happiness += 2
     return  "♪ another one bites the dust ♫"
   end
 
+
   def call_friend(person)
     self.happiness += 3
     person.happiness += 3
     return "Hi #{person.name}! It's #{self.name}. How are you?"
   end
+
 
   def start_conversation(person, topic)
     if topic == "politics"
@@ -90,5 +94,6 @@ attr_accessor :bank_account, :hygiene, :happiness
       return 'blah blah blah blah blah'
     end
   end
+
 
 end
